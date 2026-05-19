@@ -47,7 +47,7 @@ resource "aws_lambda_function" "this" {
   function_name = "mini-fintech-platform"
   role          = aws_iam_role.this.arn
   package_type  = "Image"
-  image_uri     = "mini-fintech-platform:${var.image_tag}"
+  image_uri     = "943189351074.dkr.ecr.us-east-2.amazonaws.com/mini-fintech-platform:${var.image_tag}"
 
   memory_size = 512
   timeout     = 30
