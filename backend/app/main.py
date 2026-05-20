@@ -10,3 +10,5 @@ app.include_router(transactions.router)
 @app.get("/")
 async def root():
     return {"message": "I'm a bank. No really, I'm a bank! Plz believe me!!! Don't go!!!!!"}
+
+handler = Mangum(app)
