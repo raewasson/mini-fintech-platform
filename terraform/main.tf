@@ -51,8 +51,6 @@ resource "aws_lambda_function" "this" {
 
   memory_size = 512
   timeout     = 30
-
-  architectures = ["arm64"] # Graviton support for better price/performance
 }
 
 # -----------
