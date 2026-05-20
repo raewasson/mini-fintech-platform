@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from routes import accounts, transactions
+from mangum import Mangum
 
 app = FastAPI()
 
